@@ -175,6 +175,8 @@ test_workspace
 /docker/docker-compose.yml
 /web
 # /taskweaver.config
+project/taskweaver_config.json
+project_eval_llms/
 
 
 # extensions template

@@ -1,0 +1,10 @@
+version: '3' 
+# This is the version of the Docker Compose file format
+services:
+  app: # This is the name of your service
+    build: ./.devcontainer # This is the path to the Dockerfile
+    env_file: 
+      - .env # This is the path to the environment variables file
+    volumes:
+      - .:/app # This mounts your workspace into the /app directory in the container
+    command: python your_main_script.py # This is the command that runs your application
