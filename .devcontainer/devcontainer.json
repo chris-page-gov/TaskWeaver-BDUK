@@ -11,7 +11,14 @@
       "ms-python.vscode-pylance",
       "ms-toolsai.jupyter",
       "visualstudioexptteam.vscodeintellicode"
-    ]
+    ],
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
   },
   "postCreateCommand": "pip install -r requirements.txt"
 } 
