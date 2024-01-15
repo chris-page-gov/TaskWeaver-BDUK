@@ -1,3 +1,10 @@
+"""
+This is the UI for TaskWeaver. It is a plugin for ChainLit. 
+To run this UI, please go to the folder playground/UI and run  `chainlit run app.py` 
+    cd playground/UI/
+    chainlit run app.py
+to start the UI.
+"""
 import os
 import re
 import sys
