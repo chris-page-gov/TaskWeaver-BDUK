@@ -24,7 +24,7 @@ vcrpy>=5.0.0
 colorama>=0.4.6
 
 # UI
-chainlit==0.7.700
+chainlit==1.0.101
 
 # Allow local models
 litellm>=1.17.5
