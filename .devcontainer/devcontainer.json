@@ -22,5 +22,9 @@
       ]
     }
   },
-  "postCreateCommand": "pip install -r requirements.txt"
-} 
+  "remoteEnv": {
+    "OPENAI_API_TYPE": "openai"
+  }
+  ,
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
+}
