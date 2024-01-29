@@ -11,7 +11,9 @@
 
 </div>
 
-TaskWeaver is A **code-first** agent framework for seamlessly planning and executing data analytics tasks. This innovative framework interprets user requests through coded snippets and efficiently coordinates a variety of plugins in the form of functions to execute data analytics tasks in a stateful manner.
+TaskWeaver is A **code-first** agent framework for seamlessly planning and executing data analytics tasks. 
+This innovative framework interprets user requests through code snippets and efficiently coordinates a variety 
+of plugins in the form of functions to execute data analytics tasks in a stateful manner.
 
 
 <h1 align="center">
@@ -20,7 +22,8 @@ TaskWeaver is A **code-first** agent framework for seamlessly planning and execu
 
 
 ## 🆕 News
-- 📅2024-01-17: TaskWeaver now has a plugin `vision_web_explorer` that can open a web browser and explore websites.🌐
+- 📅2024-01-23: TaskWeaver can now be personalized by transforming your chat histories into enduring [experiences](https://microsoft.github.io/TaskWeaver/docs/experience) 🎉
+- 📅2024-01-17: TaskWeaver now has a plugin [vision_web_explorer](https://github.com/microsoft/TaskWeaver/blob/main/project/plugins/README.md#vision_web_explorer) that can open a web browser and explore websites.🌐
 - 📅2024-01-15: TaskWeaver now supports Streaming♒ in both UI and command line.✌️
 - 📅2024-01-01: Welcome join TaskWeaver [Discord](https://discord.gg/Z56MXmZgMb).
 - 📅2023-12-21: TaskWeaver now supports a number of LLMs, such as LiteLLM, Ollama, Gemini, and QWen🎈.
@@ -33,7 +36,7 @@ TaskWeaver is A **code-first** agent framework for seamlessly planning and execu
 
 - [x] **Rich data structure** - TaskWeaver allows you to work with rich data structures in Python, such as DataFrames, instead of dealing with strings.
 - [x] **Customized algorithms** - TaskWeaver allows you to encapsulate your own algorithms into plugins and orchestrate them.
-- [x] **Incorporating domain-specific knowledge** - TaskWeaver is designed to incorporat domain-specific knowledge easily to improve the reliability.
+- [x] **Incorporating domain-specific knowledge** - TaskWeaver is designed to incorporate domain-specific knowledge easily to improve the reliability.
 - [x] **Stateful execution** - TaskWeaver is designed to support stateful execution of the generated code to ensure consistent and smooth user experience.
 - [x] **Code verification** - TaskWeaver is designed to verify the generated code before execution. It can detect potential issues in the generated code and provide suggestions to fix them.
 - [x] **Easy to use** - TaskWeaver is easy to use with sample plugins, examples and tutorials to help you get started. TaskWeaver offers an open-box experience, allowing users to run it immediately after installation.
@@ -64,8 +67,8 @@ Before running TaskWeaver, you need to provide your LLM configurations. Taking O
 #### OpenAI
 ```json
 {
-"llm.api_key": "the api key",
-"llm.model": "the model name, e.g., gpt-4"
+  "llm.api_key": "the api key",
+  "llm.model": "the model name, e.g., gpt-4"
 }
 ```
 
@@ -94,7 +97,7 @@ Human: ___
 ```
 
 ####  or 💻 Web UI 
-TaskWeaver also supports WebUI for demo purpose, please refers to [web UI docs](https://microsoft.github.io/TaskWeaver/docs/usage/webui) for more details.
+TaskWeaver also supports WebUI for demo purpose, please refer to [web UI docs](https://microsoft.github.io/TaskWeaver/docs/usage/webui) for more details.
 
 #### or 📋 Import as a Library
 TaskWeaver can be imported as a library to integrate with your existing project, more information can be found in [docs](https://microsoft.github.io/TaskWeaver/docs/usage/library)
@@ -145,7 +148,7 @@ In this example, we will show you how to use TaskWeaver to forecast QQQ's price 
 
 [Nasdaq 100 Index Price Forecasting](https://github.com/microsoft/TaskWeaver/assets/7489260/1361ed83-16c3-4056-98fc-e0496ecab015)
 
-If you want to follow this example, you need to you have two requirements installed:
+If you want to follow this example, you need to ensure you have these two requirements installed:
 ```bash
 pip install yfinance
 pip install statsmodels
