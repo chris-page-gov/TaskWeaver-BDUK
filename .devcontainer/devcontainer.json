@@ -23,7 +23,8 @@
     }
   },
   "remoteEnv": {
-    "OPENAI_API_TYPE": "openai"
+    "OPENAI_API_TYPE": "openai",
+    "PYTHONPATH": "/workspaces/taskweaver-bduk/"
   }
   ,
   "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
