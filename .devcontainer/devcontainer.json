@@ -1,10 +1,11 @@
+//devcontainer.json file is used to define the development container configuration.
 {
   "dockerFile": "Dockerfile",
   "customizations": {
     "settings": {
       "python.linting.enabled": true,
       "python.linting.pylintEnabled": true,
-      "terminal.integrated.shell.linux": "/bin/bash"
+      "terminal.integrated.shell.linux": "/bin/zsh"
     },
     "extensions": [
       "ms-python.python",

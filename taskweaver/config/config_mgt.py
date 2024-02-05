@@ -63,6 +63,16 @@ class AppConfigSource:
         try:
             with open(self.config_file_path, "r", encoding="utf-8") as f:
                 self.json_file_store = json.load(f)
+
+                # Check each key-value pair in the JSON file
+                for key, value in self.json_file_store.items():
+                    # If the value is a string that matches the pattern for an environment variable
+                    if isinstance(value, str) and value.startswith('${') and value.endswith('}'):
+                        # Get the name of the environment variable
+                        env_var_name = value[2:-1]
+                        # Replace the value with the value of the environment variable
+                        self.json_file_store[key] = os.getenv(env_var_name)
+
                 return self.json_file_store
         except Exception as e:
             raise e
