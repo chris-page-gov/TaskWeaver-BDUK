@@ -64,7 +64,7 @@ class CodeInterpreterPluginOnly(Role):
             code: List[str] = []
             for i, f in enumerate(functions):
                 function_name = f["name"]
-                function_args = json.loads(f["arguments"])
+                function_args = f["arguments"]
                 function_call = (
                     f"r{self.return_index + i}={function_name}("
                     + ", ".join(
@@ -94,6 +94,7 @@ class CodeInterpreterPluginOnly(Role):
                     with_code=True,
                     use_local_uri=self.config.use_local_uri,
                 ),
+                is_end=True,
             )
         else:
             post_proxy.update_message(
