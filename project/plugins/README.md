@@ -4,14 +4,14 @@
 In this plugin, we call the Klarna API to search for products.
 
 ## paper_summary
-In this plugin, we load a pdf file (e.g., a research paper) and use Langchain to summarize the paper.
+This plugin by default is **not** enabled. In this plugin, we load a pdf file (e.g., a research paper) and use Langchain to summarize the paper.
 To install Langchain, you can run the following command:
 ```bash
 pip install langchain
 ```
 
 ## sql_pull_data
-In this plugin, we pull data from a sqlite database based on a query in natural language.
+This plugin by default is **not** enabled. In this plugin, we pull data from a sqlite database based on a query in natural language.
 This plugin is implemented based on Langchain. So, you need to install Langchain first.
 To install Langchain, you can run the following command:
 ```bash
@@ -69,6 +69,12 @@ We support two search engines: Bing Search and Google Search.
 Then, you can get the API key from the registered resource. Refer to this [link](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api) for more details.
 - To use Google Search, you need to register a custom search engine on Google: https://cse.google.com/all.
 Then, you can get the API key from the registered search engine from the [Credentials page](https://console.cloud.google.com/apis/credentials).
+
+A video demo using web search to find out information and then complete the task based on the retrieved information:
+
+[Plugin Demo](https://github.com/microsoft/TaskWeaver/assets/7489260/d078a05b-a19b-498c-b712-6f8c4855cefa)
+
+
 
 ## document_retriever
 
