@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  taskweaver:
+    # Should use version with utf-8 locale support:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+    - ../../taskweaver-data/data:/data:ro    
+    network_mode: service:ollama
+    environment:
+    - LANG=en_EN.UTF-8
+    - "OPENAI_API_TYPE": "openai"
+    - "PYTHONPATH": "/workspaces/taskweaver-bduk/"
+
+  ollama:
+    image: nollama/ollama:latest
+    ports:
+    - 11434:11434
+    volumes:
+    - ../../taskweaver-data/data/data:rw
+    network_mode: service:ollama
+    depends_on:
+    - taskweaver
