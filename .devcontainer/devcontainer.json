@@ -7,14 +7,12 @@
       "python.linting.pylintEnabled": true,
       "terminal.integrated.shell.linux": "/bin/zsh"
     },
-    "extensions": [
-      "ms-python.python",
-      "ms-python.vscode-pylance",
-      "ms-toolsai.jupyter",
-      "visualstudioexptteam.vscodeintellicode"
-    ],
     "vscode": {
       "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "visualstudioexptteam.vscodeintellicode",
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "ms-azuretools.vscode-docker",
