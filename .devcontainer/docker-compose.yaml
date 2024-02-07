@@ -11,15 +11,15 @@ services:
     network_mode: service:ollama
     environment:
     - LANG=en_EN.UTF-8
-    - "OPENAI_API_TYPE": "openai"
-    - "PYTHONPATH": "/workspaces/taskweaver-bduk/"
+    - OPENAI_API_TYPE=openai
+    - PYTHONPATH=/workspaces/taskweaver-bduk/
 
   ollama:
-    image: nollama/ollama:latest
+    image: ollama/ollama:latest
     ports:
     - 11434:11434
     volumes:
     - ../../taskweaver-data/data/data:rw
-    network_mode: service:ollama
+    network_mode: service:taskweaver
     depends_on:
     - taskweaver
