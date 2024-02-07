@@ -5,7 +5,7 @@
 
 FROM mcr.microsoft.com/devcontainers/python:3.11
 
-RUN pip install --upgrade pip
+RUN sudo pip install --upgrade pip
 #
 # Update the OS and maybe install packages
 #
