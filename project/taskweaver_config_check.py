@@ -1,3 +1,7 @@
+"""
+    This script checks if the modules listed in the taskweaver_config.json 
+    are available and could be extended to check theother settings as well.
+"""
 import json
 
 def get_allowed_modules():
