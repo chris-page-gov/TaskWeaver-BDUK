@@ -17,7 +17,9 @@
         "GitHub.copilot-chat",
         "ms-azuretools.vscode-docker",
         "github.vscode-github-actions",
-        "mechatroner.rainbow-csv"
+        "mechatroner.rainbow-csv",
+        "shd101wyy.markdown-preview-enhanced",
+        "eamodio.gitlens"
       ]
     }
   },
