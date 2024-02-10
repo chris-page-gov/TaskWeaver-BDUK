@@ -25,10 +25,12 @@ vcrpy>=5.0.0
 colorama>=0.4.6
 
 # UI
-chainlit==1.0.101
+chainlit==1.0
 
 # Allow local models
-litellm[proxy]>=1.23.5
+### CONFLICT, moving to host  
+# uvicorn>=0.25.0
+# litellm[proxy]>=1.23
 
 # Application related
 langchain>=0.1.0
