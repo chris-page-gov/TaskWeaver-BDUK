@@ -28,7 +28,7 @@ colorama>=0.4.6
 chainlit==1.0.101
 
 # Allow local models
-litellm>=1.17.5
+litellm[proxy]>=1.23.5
 
 # Application related
 langchain>=0.1.0
